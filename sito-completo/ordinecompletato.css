@@ -1,0 +1,141 @@
+
+body {
+  background-color: rgb(62, 60, 60);
+  margin: 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+header {
+    background: linear-gradient(rgb(62, 60, 60));
+    color: rgb(255, 193, 133);
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: serif;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.2);
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.headercolor {
+  color: rgb(230, 173, 90);
+}
+
+  .navbar {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444;
+    
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(89, 89, 89);
+}
+
+.navbar li {
+    margin: 0 12px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: rgb(255, 193, 133);
+}
+
+.container.completato {
+  background-color: rgb(255, 193, 133);
+  padding: 50px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 80px auto; 
+  box-shadow: 0 0 20px rgba(0, 128, 0, 0.15);
+}
+
+/* Icona della conferma */
+.checkmark {
+  font-size: 80px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.success-title {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.side-decor {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.side-decor.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,193,133,0.20), transparent);
+}
+
+.side-decor.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,193,133,0.20), transparent);
+}
+
+@media (max-width: 768px) {
+  .contprincipale {
+    flex-direction: column;
+    padding: 1em;
+  }
+}

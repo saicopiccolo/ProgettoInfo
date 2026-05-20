@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StepUp Shoes - Store</title>
+  <link rel="stylesheet" href="Store.css">
+</head>
+
+<body>
+
+<header>
+    <h1>StepUp Shoes</h1>
+    <p class="headercolor">I Nostri Prodotti</p>
+</header>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Store.html">Store</a></li>
+        <li><a href="Contattaci.html">Contattaci</a></li>
+        <li><a href="Login.html">Accedi</a></li>
+        <li><a href="carrello.html" class="cart-icon">🛒</a></li>
+    </ul>
+</nav>
+
+<div class="side-decor left"></div>
+<div class="side-decor right"></div>
+
+<div class="container">
+
+<h2 class="catalog-title">Il nostro catalogo</h2>
+
+<div class="products">
+
+<!-- 1 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/079/407/687/original/933532_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan 4</p>
+  <p class="product-price">179.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan 4', 179.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/079/407/687/original/933532_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 2 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/066/685/865/original/824865_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan 5 Retro</p>
+  <p class="product-price">399.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan 5 Retro', 399.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/066/685/865/original/824865_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 3 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/072/682/079/original/895937_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan 1 Retro High</p>
+  <p class="product-price">299.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan 1 Retro High', 299.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/072/682/079/original/895937_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 4 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/072/810/606/original/828563_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan x Travis Scott</p>
+  <p class="product-price">499.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan x Travis Scott', 499.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/072/810/606/original/828563_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 5 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/080/579/187/original/1044700_00.png.png?action=crop&width=360">
+  <p class="product-name">Trophy Room x Air Jordan 7</p>
+  <p class="product-price">499.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Trophy Room x Air Jordan 7', 499.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/080/579/187/original/1044700_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 6 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/067/957/684/original/897203_00.png.png?action=crop&width=360">
+  <p class="product-name">Lebron Big 9</p>
+  <p class="product-price">199.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Lebron Big 9', 199.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/067/957/684/original/897203_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 7 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/073/718/016/original/834455_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan 3 Retro Purple</p>
+  <p class="product-price">399.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan 3 Retro Purple', 399.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/073/718/016/original/834455_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 8 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/073/720/045/original/935629_00.png.png?action=crop&width=360">
+  <p class="product-name">Off-White x Air Force 1</p>
+  <p class="product-price">799.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Off-White AF1', 799.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/073/720/045/original/935629_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 9 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/070/734/777/original/819152_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan 9 Retro</p>
+  <p class="product-price">299.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan 9 Retro', 299.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/070/734/777/original/819152_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 10 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/078/819/968/original/1014117_00.png.png?action=crop&width=360">
+  <p class="product-name">Air Jordan 11 Midnight</p>
+  <p class="product-price">149.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Air Jordan 11 Midnight', 149.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/078/819/968/original/1014117_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 11 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/082/754/107/original/1087620_00.png.png?action=crop&width=360">
+  <p class="product-name">Stussy x Air Penny</p>
+  <p class="product-price">149.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('Stussy x Air Penny', 149.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/082/754/107/original/1087620_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+<!-- 12 -->
+<div class="product">
+  <img src="https://image.goat.com/transform/v1/attachments/product_template_pictures/images/080/012/147/original/1068362_00.png.png?action=crop&width=360">
+  <p class="product-name">MB.01 Lo</p>
+  <p class="product-price">199.99 €</p>
+  <button class="order-button"
+    onclick="addToCart('MB.01 Lo', 199.99, 'https://image.goat.com/transform/v1/attachments/product_template_pictures/images/080/012/147/original/1068362_00.png.png?action=crop&width=360')">
+    AGGIUNGI
+  </button>
+</div>
+
+</div>
+</div>
+
+<footer>
+    <p>© 2026 STEPUP SHOES - EDITOR SITO Raimondi Leonardo</p>
+  </footer>
+  
+</body>
+</html>

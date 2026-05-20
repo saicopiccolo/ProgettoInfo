@@ -1,0 +1,178 @@
+
+html, body {
+     height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    background-color: rgb(62, 60, 60);
+}
+
+header {
+    background: linear-gradient(rgb(62, 60, 60));
+    color: rgb(255, 193, 133);
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: serif;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.2);
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.headercolor {
+  color: rgb(230, 173, 90);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(62, 60, 60);
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(89, 89, 89);
+}
+
+.navbar li {
+    margin: 0 12px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: rgb(255, 193, 133);
+}
+
+.contatti-main {
+    display: flex;
+    justify-content: center;
+    padding: 3em 1em;
+    gap: 30px;
+}
+
+.contatti-info {
+    max-width: 600px;
+    background-color: rgb(255, 193, 133);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contatti-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.contatti-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1.5em;
+}
+
+.contatti-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contatti-info ul li {
+    margin-bottom: 15px;
+}
+
+.contatti-info a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.contatti-info a:hover {
+    color: #ffd700;
+}
+.contatti-img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side-decor {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.side-decor.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,193,133,0.25), transparent);
+}
+
+.side-decor.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,193,133,0.25), transparent);
+}
+
+
+footer {
+    background-color: rgb(62, 60, 60);
+    color: #ccc;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .contprincipale {
+    flex-direction: column;
+    padding: 1em;
+  }
+}

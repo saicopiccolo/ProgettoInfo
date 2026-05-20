@@ -1,0 +1,234 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    background-color: rgb(62, 60, 60);
+}
+
+
+header {
+    background: linear-gradient(rgb(62, 60, 60));
+    color: rgb(255, 193, 133);
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: serif;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.2);
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.headercolor {
+  color: rgb(230, 173, 90);
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(89, 89, 89);
+}
+
+.navbar li {
+    margin: 0 12px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: rgb(255, 193, 133);
+}
+
+.contprincipale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 2em;
+    text-align: left;
+  }
+  
+  section {
+    flex: 1;
+    padding: 2em;
+    text-align: center;
+}
+
+  .sezioneasinistra{
+       background-color: rgb(255, 193, 133);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: auto;
+    max-width: 600px;
+    animation: slideFromBottom 1.3s ease-out both;
+    }
+  
+  .sezioneadestra {
+    background-color: rgb(255, 193, 133);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: auto;
+    max-width: 600px;
+    animation: slideFromTop 1.3s ease-out both;
+  }
+  
+  .sezioneadestra ul {
+    padding-left: 20px;
+  }
+  
+.contprincipale {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  padding: 40px;
+}
+
+.immaginehomepage {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+.sezioneasinistra h2, .sezioneadestra h2 {
+    color: #222;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.sezioneasinistra p, .sezioneadestra p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.sezioneasinistra ul li, .sezioneadestra ul li {
+    font-size: 1em;
+    color: #444;
+}
+
+.immaginehomepage {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side-decor {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.side-decor.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,193,133,0.25), transparent);
+}
+
+.side-decor.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,193,133,0.25), transparent);
+}
+
+
+footer {
+    background-color: rgb(62, 60, 60);
+    color: #ccc;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .contprincipale {
+    flex-direction: column;
+    padding: 1em;
+  }
+}

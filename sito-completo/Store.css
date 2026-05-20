@@ -1,0 +1,256 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(62, 60, 60);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: pageFadeIn 0.8s ease-out forwards;
+}
+
+header {
+    background: linear-gradient(rgb(62, 60, 60));
+    color: rgb(255, 193, 133);
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: serif;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.headercolor {
+    color: rgb(230, 173, 90);
+}
+
+.catalog-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 35px 0 25px 0;
+    color: rgb(255, 193, 133);
+    text-transform: uppercase;
+    font-family: serif;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(89, 89, 89);
+}
+
+.navbar li {
+    margin: 0 12px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: rgb(255, 193, 133);
+}
+
+.container {
+    padding: 20px 40px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+.product {
+    border: 1px solid #ccc;
+    padding: 12px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.product::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.product:hover::before {
+    opacity: 1;
+}
+
+.product img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.product-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 12px 0 6px 0;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.product img,
+.product-name,
+.product-price {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.product:hover img,
+.product:hover .product-name,
+.product:hover .product-price {
+    filter: blur(2px);
+}
+
+.order-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(255, 193, 133);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.product:hover .order-button {
+    opacity: 1;
+}
+
+.side-decor {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.side-decor.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,193,133,0.20), transparent);
+}
+
+.side-decor.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,193,133,0.20), transparent);
+}
+
+footer {
+    background-color: rgb(62, 60, 60);
+    color: #ccc;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@keyframes pageFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+  .contprincipale {
+    flex-direction: column;
+    padding: 1em;
+  }
+}
